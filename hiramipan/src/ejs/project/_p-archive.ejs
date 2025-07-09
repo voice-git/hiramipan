@@ -1,0 +1,48 @@
+<div class="p-archive">
+    <div class="p-archive__inner l-inner">
+        <ul class="p-archive__tabs">
+            <li class="p-archive__tab is-active">
+                <a href="#"><span>新着</span></a>
+            </li>
+            <li class="p-archive__tab">
+                <a href="#"><span>催事</span></a>
+            </li>
+            <li class="p-archive__tab">
+                <a href="#"><span>ブラッスリー</span></a>
+            </li>
+            <li class="p-archive__tab">
+                <a href="#"><span>バカボンド</span></a>
+            </li>
+            <li class="p-archive__tab">
+                <a href="#"><span>移動販売</span></a>
+            </li>
+            <li class="p-archive__tab">
+                <a href="#"><span>その他</span></a>
+            </li>
+        </ul>
+        <div class="p-archive__cards">
+            <% for ( var i = 0; i < 16; i++ ){ %>
+            <div class="p-archive__card">
+                <%- include('../component/_c-card') %>
+            </div>
+            <% } %>
+        </div>
+        <div class="p-archive__nav">
+            <div class="navigation post-navigation">
+                <div class="nav-links">
+                    <a href="" class="prev page-numbers">
+                        <img src="./images/common/arrow2.svg" alt="前へ">
+                    </a>
+                    <a href="#" class="page-numbers current">1</a>
+                    <a href="#" class="page-numbers">2</a>
+                    <a href="" class="next page-numbers">
+                        <img src="./images/common/arrow2.svg" alt="後へ">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="p-archive__bnr">
+            <%- include('../component/_c-bnr') %>
+        </div>
+    </div>
+</div>

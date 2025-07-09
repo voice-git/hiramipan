@@ -1,0 +1,81 @@
+<div class="p-topNews">
+    <div class="p-topNews__inner l-inner">
+        <div class="p-topNews__title">
+            <%- include('../component/_c-title',{
+                title:'ひらみ通信',
+                subtitle:'NEWS',
+                color:'white'
+            }) %>
+        </div>
+        <ul class="p-topNews__tabs">
+            <li class="p-topNews__tab js-tab is-active"><span>新着</span></li>
+            <li class="p-topNews__tab js-tab"><span>催事</span></li>
+            <li class="p-topNews__tab js-tab"><span>ブラッスリー</span></li>
+            <li class="p-topNews__tab js-tab"><span>バカボンド</span></li>
+            <li class="p-topNews__tab js-tab"><span>移動販売</span></li>
+            <li class="p-topNews__tab js-tab"><span>その他</span></li>
+        </ul>
+        <div class="p-topNews__blocks">
+            <div class="p-topNews__block">
+                <div class="p-topNews__cards">
+                    <% for ( var i = 0; i < 4; i++ ){ %>
+                    <div class="p-topNews__card">
+                        <%- include('../component/_c-card') %>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="p-topNews__block u-hide">
+                <div class="p-topNews__cards">
+                    <% for ( var i = 0; i < 4; i++ ){ %>
+                    <div class="p-topNews__card">
+                        <%- include('../component/_c-card') %>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="p-topNews__block u-hide">
+                <div class="p-topNews__cards">
+                    <% for ( var i = 0; i < 4; i++ ){ %>
+                    <div class="p-topNews__card">
+                        <%- include('../component/_c-card') %>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="p-topNews__block u-hide">
+                <div class="p-topNews__cards">
+                    <% for ( var i = 0; i < 4; i++ ){ %>
+                    <div class="p-topNews__card">
+                        <%- include('../component/_c-card') %>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="p-topNews__block u-hide">
+                <div class="p-topNews__cards">
+                    <% for ( var i = 0; i < 4; i++ ){ %>
+                    <div class="p-topNews__card">
+                        <%- include('../component/_c-card') %>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="p-topNews__block u-hide">
+                <div class="p-topNews__cards">
+                    <% for ( var i = 0; i < 4; i++ ){ %>
+                    <div class="p-topNews__card">
+                        <%- include('../component/_c-card') %>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="p-topNews__btn">
+            <%- include('../component/_c-btn',{
+                link:'#',
+                text:'MORE'
+            }) %>
+        </div>
+    </div>
+</div>

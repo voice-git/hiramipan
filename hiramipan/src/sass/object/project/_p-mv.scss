@@ -1,0 +1,108 @@
+@use 'global' as *;
+
+.p-mv {
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+    max-height: 1200px;
+
+    @include mq(md) {
+        min-height: 600px;
+    }
+}
+
+.p-mv__inner {
+    height: 100%;
+}
+
+.p-mv__slider {
+    height: 100%;
+}
+
+.p-mv__slider .slick-list {
+    height: 100%;
+}
+
+.p-mv__slider .slick-track {
+    height: 100%;
+}
+
+.p-mv__slider picture {
+    display: block;
+    height: 100%;
+}
+
+.p-mv__slider picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: unset;
+}
+
+.p-mv__slider picture.slick-current img {
+    animation: zoomOut 5s linear;
+
+    @include mq(md) {
+        animation: zoomOut 5.5s linear;
+    }
+}
+
+.p-mv__title {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+    max-width: rem(560);
+    width: 100%;
+    z-index: 1;
+
+    @include mq(md) {
+        max-width: rem(292);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.p-mv__slider {
+    
+    .slider-dots {
+        position: absolute;
+        bottom: rem(-42);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: rem(36);
+        margin: 0 auto;
+
+        @include mq(md) {
+            bottom: rem(-32);
+        }
+    }
+    
+    .slider-dots li {
+        list-style: none;
+        width: rem(10);
+        height: rem(10);
+        border-radius: 50%;
+        background-color: #D1C0AE;
+    }
+    
+    .slider-dots li.slick-active {
+        background-color: #887058;
+    }
+    
+    .slider-dots button {
+        display: none;
+    }
+}

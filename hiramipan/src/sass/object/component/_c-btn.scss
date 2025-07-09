@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background-color: $white;
+  justify-content: center;
+  font-size: rem(15);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border-radius: rem(10);
+  transition: all 0.3s;
+  width: rem(338);
+  height: rem(50);
+}
+
+.c-btn::before {
+  position: absolute;
+  content: "";
+  width: rem(24);
+  height: rem(6);
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(12);
+  mask: url(../images/common/arrow.svg) center center / contain no-repeat;
+  background-color: #4D2200;
+  transition: all 0.3s;
+}
+
+.c-btn:hover {
+  background-color: $main-color;
+  color: $white;
+
+  &::before {
+    background-color: $white;
+  }
+}

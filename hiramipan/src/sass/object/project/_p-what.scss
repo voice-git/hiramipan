@@ -1,0 +1,85 @@
+@use 'global' as *;
+
+.p-what {
+    padding-top: rem(140);
+    padding-bottom: rem(210);
+
+    @include mq(md) {
+        padding-top: rem(116);
+        padding-bottom: rem(100);
+    }
+}
+
+.p-what__inner {
+
+}
+
+.p-what__title {
+
+}
+
+.p-what__text {
+    text-align: center;
+    font-size: rem(16);
+    line-height: calc(36/16);
+    letter-spacing: 0.1em;
+    margin-top: rem(72);
+
+    @include mq(md) {
+        font-size: rem(14);
+        line-height: calc(34/15);
+        margin-top: rem(34);
+    }
+}
+
+.p-what__blocks {
+    margin-top: rem(90);
+}
+
+.p-what__block {
+
+}
+
+.p-what__block + .p-what__block {
+    margin-top: rem(80);
+}
+
+.p-what__block p:first-child {
+    font-size: rem(20);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: calc(30/20);
+    text-align: center;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-what__block p:nth-child(2) {
+    font-size: rem(20);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: calc(30/20);
+    text-align: center;
+    margin-right: rem(10);
+
+    @include mq(md) {
+        font-size: rem(18);
+        margin-top: rem(12);
+    }
+}
+
+.p-what__block p:last-child {
+    text-align: center;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: calc(36/16);
+    letter-spacing: 0.1em;
+    margin-top: rem(26);
+
+    @include mq(md) {
+        font-size: rem(14);
+        line-height: calc(26/14);
+    }
+}

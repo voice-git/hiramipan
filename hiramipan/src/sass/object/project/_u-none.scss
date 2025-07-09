@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.u-none {
+    text-align: center;
+    color: $white;
+    font-size: rem(16);
+    padding-block: rem(20);
+}

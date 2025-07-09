@@ -1,0 +1,29 @@
+<div class="p-topRecruit">
+    <div class="p-topRecruit__inner l-inner">
+        <div class="p-topRecruit__content">
+            <div class="p-topRecruit__title">
+                <%- include('../component/_c-title',{
+                    title:'スタッフ募集',
+                    subtitle:'RECRUITMENT',
+                    color:'white'
+                }) %>
+            </div>
+            <p class="p-topRecruit__text --center --white">
+                一緒に働いてくださる方を<br class="u-mobile">募集しています。<br>
+                お電話または採用フォームから、<br class="u-mobile">ぜひお問い合わせください。
+            </p>
+            <div class="p-topRecruit__btn">
+                <%- include('../component/_c-btn',{
+                    text:'詳しい採用情報へ',
+                    link:'#'
+                }) %>
+            </div>
+        </div>
+    </div>
+    <picture class="p-topRecruit__bg">
+        <source srcset="./images/top/bg_recruit_sp.webp" media="(max-width:767px)" type="image/webp" />
+        <source srcset="./images/top/bg_recruit_sp.png" media="(max-width:767px)" />
+        <source srcset="./images/top/bg_recruit.webp" type="image/webp" />
+        <img src="./images/top/bg_recruit.png" alt="背景">
+    </picture>
+</div>

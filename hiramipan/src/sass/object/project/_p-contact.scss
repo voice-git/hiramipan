@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.p-contact {
+    padding-top: rem(160);
+    padding-bottom: rem(90);
+
+    @include mq(md) {
+        padding-top: rem(130);
+    }
+}
+
+.p-contact__inner {
+
+}
+
+.p-contact__title {
+
+}
+
+.p-contact__form {
+
+}
+
+.p-contact__bnr {
+    margin-top: rem(264);
+
+    @include mq(md) {
+        margin-top: rem(211);
+    }
+}
+
+.p-contact__thanks {
+    text-align: center;
+    margin-block:rem(100);
+}
+
+.p-contact__btn {
+    text-align: center;
+}
+
+.wpcf7-spinner {
+    display: none;
+}

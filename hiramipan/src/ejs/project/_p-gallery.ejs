@@ -1,0 +1,19 @@
+<div class="p-gallery">
+    <div class="p-gallery__inner l-inner">
+        <h2 class="p-gallery__title --center en">GALERIE</h2>
+        <div class="p-gallery__img">
+            <% for ( var i = 1; i < 16; i++ ){ %>
+            <%
+            if ( i < 10){
+                i = '0' + i;
+            } else {
+                i = i;
+            }
+            %>
+            <picture>
+                <img src="./images/top/gallery_<%= i %>.jpg" alt="ギャラリー">
+            </picture>
+            <% } %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="p-shopping">
+    <div class="p-shopping__inner l-inner">
+        <div class="p-shopping__title">
+            <%- include('../component/_c-title',{
+                title:'おかいもの',
+                subtitle:'SHOPPING'
+            }) %>
+        </div>
+        <ul class="p-shopping__lists">
+            <% for (var i = 0; i < 9; i++ ){ %>
+            <li class="p-shopping__list">
+                <a href="#">
+                    <picture class="p-shopping__img">
+                        <img src="./images/top/shopping_01.jpg" alt="">
+                    </picture>
+                    <div class="p-shopping__content">
+                        <p class="p-shopping__name">おかしなめろんセット</p>
+                        <p class="p-shopping__text en">Pain au melon qui uent être sycré</p>
+                        <p class="p-shopping__price">¥1000（税込）</p>
+                    </div>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

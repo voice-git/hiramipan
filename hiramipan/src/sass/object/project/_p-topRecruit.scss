@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.p-topRecruit {
+    position: relative;
+
+}
+
+.p-topRecruit__inner {
+
+}
+
+.p-topRecruit__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.p-topRecruit__title {
+
+}
+
+.p-topRecruit__text {
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: calc(46/16);
+    letter-spacing: 0.15em;
+    margin-top: rem(66);
+    transition: all 1s;
+}
+
+.p-topRecruit__btn {
+    text-align: center;
+    margin-top: rem(80);
+}
+
+.p-topRecruit__bg {
+
+}

@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+html {
+	background: url(../images/common/bg.jpg) center center / 100% repeat-y;
+
+	@include mq(md) {
+		background-image: url(../images/common/bg_sp.jpg);
+	}
+}
+
+html.is-fixed {
+	overflow: hidden;
+}
+
+main {
+	overflow: clip;
+}
+
+.--center {
+	text-align: center;
+}
+
+.--white {
+	color: $white;
+}
+
+.--main-color {
+	color: $main-color;
+}
+
+.en {
+	font-family: $en-font;
+}
+
+.u-hide {
+	display: none;
+}

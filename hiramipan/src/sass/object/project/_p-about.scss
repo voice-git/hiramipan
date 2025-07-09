@@ -1,0 +1,78 @@
+@use 'global' as *;
+
+.p-about {
+    background: url(../images/top/bg_about.jpg) center center / cover no-repeat;
+    padding-top: rem(116);
+    padding-bottom: rem(220);
+
+    @include mq(md) {
+        background-image: url(../images/top/bg_about_sp.jpg);
+        padding-top: rem(70);
+        padding-bottom: rem(90);
+    }
+}
+
+.p-about__inner {
+    max-width: calc(rem(1068) + $padding-pc + $padding-pc);
+
+    @include mq(md) {
+        max-width: calc(rem(285) + $padding-sp + $padding-sp);
+    }
+}
+
+.p-about__title {
+
+}
+
+.p-about__wrap {
+    display: grid;
+    grid-template-columns: 1fr 72%;
+    gap: rem(42);
+    margin-top: rem(70);
+
+    @include mq(md) {
+        display: block;
+        margin-top: rem(34);
+    }
+}
+
+.p-about__info {
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    line-height: calc(40/14);
+    font-weight: 500;
+
+    @include mq(md) {
+        text-align: center;
+        line-height: calc(34/14);
+    }
+}
+
+.p-about__info a {
+    text-decoration: underline;
+}
+
+.p-about__info img {
+    display: inline-block;
+    width: rem(12);
+}
+
+.p-about__map {
+    width: 100%;
+
+    @include mq(md) {
+        margin-top: rem(37);
+    }
+
+    iframe {
+        aspect-ratio: 770/306;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        @include mq(md) {
+            aspect-ratio: 285/220;
+        }
+    }
+
+}

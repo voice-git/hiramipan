@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+    <body>
+        <header class="l-header">
+            <div class="p-sub-header is-active">
+                <div class="p-sub-header__inner l-inner">
+                    <div class="p-sub-header__nav">
+                        <%- include('./common/_globalNav1') %>
+                    </div>
+                    <h1 class="p-sub-header__logo">
+                        <a href="#">
+                            <img src="./images/common/logo.png" alt="ひらみぱんのロゴ">
+                        </a>
+                    </h1>
+                    <div class="p-sub-header__nav">
+                        <%- include('./common/_globalNav2') %>
+                    </div>
+                    <div class="p-sub-header__hamburger">
+                        <%- include('./component/_c-hamburger') %>
+                    </div>
+                    <div class="p-sub-header__drawer">
+                        <%- include('./common/_p-drawer') %>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="l-single">
+                <%- include('./project/_p-single') %>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <%- include('./common/_p-footer') %>
+        </footer>
+    </body>
+</html>

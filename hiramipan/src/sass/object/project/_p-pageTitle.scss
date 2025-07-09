@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.p-pageTitle {
+    padding-top: rem(134);
+
+    @include mq(md) {
+        padding-top: rem(126);
+    }
+}

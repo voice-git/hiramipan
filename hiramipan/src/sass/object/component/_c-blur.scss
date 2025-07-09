@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.c-blur {
+    filter: blur(rem(10));
+    transition: all 2s;
+}
+
+.c-blur.is-active {
+    filter: blur(0);
+}

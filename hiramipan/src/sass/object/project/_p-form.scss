@@ -1,0 +1,96 @@
+@use 'global' as *;
+
+.p-form {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: rem(75);
+    }
+}
+
+.p-form__main {
+    max-width: rem(616);
+    margin-inline: auto;
+}
+
+.p-form__row {
+    display: grid;
+    grid-template-columns: 1fr rem(400);
+    align-items: center;
+    padding-block: rem(20);
+    border-bottom: 1px solid #D3D3D3;
+
+    @include mq(md) {
+        display: block;
+        padding-top: rem(15);
+        padding-bottom: rem(20);
+    }
+}
+
+.p-form__row dt {
+    font-size: rem(14);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+.p-form__row dt span {
+    font-size: rem(11);
+    font-weight: bold;
+    color: #C60000;
+}
+
+.p-form__row dd {
+    @include mq(md) {
+        margin-top: rem(11);
+    }
+}
+
+.p-form__row dd input {
+    display: inline-block;
+    width: 100%;
+    height: rem(34);
+    background-color: $white;
+    border-radius: rem(9);
+    padding-inline: 1em;
+}
+.p-form__row dd.radio input {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border-radius: 6px;
+    padding-inline: unset;
+    border: solid 1px #D3D3D3;
+    margin: 0;
+    &:checked {
+        background-color: #4D2200;
+        border: solid 2px #D3D3D3;
+    }
+}
+
+.p-form__text {
+    text-align: center;
+    font-size: rem(14);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: calc(20/14);
+    margin-top: rem(160);
+
+    @include mq(md) {
+        margin-top: rem(90);
+    }
+}
+
+.p-form__submit {
+    text-align: center;
+    margin-top: rem(36);
+
+}
+
+.p-form__submit input {
+    color: $main-color;
+}
+
+.p-form__submit:hover input {
+    color: $white;
+}

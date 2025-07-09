@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.p-globalNav {
+
+}
+
+.p-globalNav__lists {
+    display: flex;
+    align-items: center;
+    gap: min(vw(1366,65),rem(65));
+}
+
+.p-globalNav__list {
+
+}
+
+.p-globalNav__list a {
+    display: block;
+    text-align: center;
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: calc(20/14);
+    letter-spacing: 0.1em;
+    color: $white;
+    transition: all 0.3s;
+}
+
+.p-globalNav__list a:hover {
+    opacity: 0.8;
+}
+
+.p-globalNav__list a span {
+    display: block;
+    font-size: rem(18);
+    font-weight: 400;
+    margin-top: rem(3);
+}

@@ -1,0 +1,45 @@
+@use 'global' as *;
+
+.navigation {
+
+}
+
+.nav-links {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: rem(22);
+    margin-inline: auto;
+    padding-inline: rem(60);
+}
+
+.page-numbers {
+    opacity: 0.4;
+    font-family: $en-font;
+    font-size: rem(16);
+    line-height: calc(20/16);
+}
+
+.page-numbers.current {
+    opacity: 1;
+}
+
+.page-numbers.prev {
+    position: absolute;
+    width: rem(10);
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.page-numbers.next {
+    position: absolute;
+    width: rem(10);
+    opacity: 1;
+    transform: translateY(-50%) rotate(180deg) ;
+    top: 50%;
+    right: 0;
+}

@@ -1,0 +1,132 @@
+@use 'global' as *;
+
+.p-footer {
+    padding-top: rem(90);
+    padding-bottom: rem(67);
+    background-color: $white;
+
+    @include mq(md) {
+        padding-top: rem(78);
+        padding-bottom: rem(57);
+    }
+}
+
+.p-footer__inner {
+
+}
+
+.p-footer__logo {
+    max-width: rem(230);
+    margin-inline: auto;
+}
+
+.p-footer__info {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(34/14);
+    letter-spacing: 0.1em;
+    margin-top: rem(34);
+
+    @include mq(md) {
+        font-size: rem(12);
+        line-height: calc(30/12);
+    }
+}
+
+.p-footer__sns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(16);
+    margin-top: rem(36);
+}
+
+.p-footer__sns li {
+    width: rem(35);
+}
+
+.p-footer__sns li a {
+    display: block;
+}
+
+.p-footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(36);
+
+    @include mq(md) {
+        max-width: rem(218);
+        margin-inline: auto;
+        flex-direction: column;
+        gap: rem(33);
+        margin-top: rem(42);
+    }
+}   
+
+.p-footer__link {
+    position: relative;
+
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+.p-footer__link::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: rem(1);
+    height: rem(14);
+    transform: translateY(-50%);
+    left: 0;
+    background-color: #4D2200;
+}
+
+.p-footer__link::after {
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        top: 50%;
+        width: rem(1);
+        height: rem(14);
+        transform: translateY(-50%);
+        right: 0;
+        background-color: #4D2200;
+    }
+}
+
+.p-footer__link:last-child::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: rem(1);
+    height: rem(14);
+    transform: translateY(-50%);
+    right: 0;
+    background-color: #4D2200;
+}
+
+.p-footer__link a {
+    display: inline-block;
+    padding-inline: rem(40);
+    font-size: rem(14);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+
+    @include mq(md) {
+        width: 100%;
+        text-align: center;
+        font-size: rem(12);
+    }
+}
+
+.p-footer__copy {
+    text-align: center;
+    font-size: rem(12);
+    margin-top: rem(60);
+
+    @include mq(md) {
+        margin-top: rem(41);
+    }
+}

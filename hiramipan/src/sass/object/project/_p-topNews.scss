@@ -1,0 +1,123 @@
+@use 'global' as *;
+
+.p-topNews {
+    padding-block: vw(1366,200);
+    background: url(../images/top/bg_news.png) center top / cover no-repeat;
+
+    @include mq(md) {
+        background: url(../images/top/bg_news_sp.png) center top / cover no-repeat;
+        padding-top: 25vw;
+        padding-bottom: 35vw;
+    }
+}
+
+.p-topNews__inner {
+
+}
+
+.p-topNews__title {
+
+}
+
+.p-topNews__tabs {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: rem(64);
+    border-right: 1px solid $white;
+
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+        margin-top: rem(39);
+        border: 1px solid $white;
+    }
+}
+
+.p-topNews__tab {
+    font-size: rem(16);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: calc(30/16);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: $white;
+    border-left: 1px solid $white;
+
+    @include mq(md) {
+        line-height: calc(24/16);
+        padding-block: rem(9);
+    }
+}
+
+.p-topNews__tab:nth-child(even) {
+    @include mq(md) {
+        border-left: 1px solid $white;
+    }
+} 
+
+.p-topNews__tab:nth-child(n+3) {
+    @include mq(md) {
+        border-top: 1px solid $white;
+    }
+}
+
+.p-topNews__tab span {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.p-topNews__tab:hover {
+    background-color: $white;
+    color: $main-color;
+
+    span {
+        opacity: 1;
+    }
+}
+
+.p-topNews__tab.is-active {
+    color: $main-color;
+    background-color: $white;
+
+    span {
+        opacity: 1;
+    }
+}
+
+.p-topNews__blocks {
+    margin-top: rem(82);
+    transition: all 1s;
+
+    @include mq(md) {
+        margin-top: rem(44);
+    }
+}
+
+
+.p-topNews__block {
+    transition: all 0.3s;
+}
+
+.p-topNews__cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: rem(56);
+
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(34) rem(11);
+    }
+}
+
+.p-topNews__card {
+
+}
+
+.p-topNews__btn {
+    text-align: center;
+    margin-top: rem(60);
+
+    @include mq(md) {
+        margin-top: rem(56);
+    }
+}

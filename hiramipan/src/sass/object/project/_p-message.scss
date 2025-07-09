@@ -1,0 +1,84 @@
+@use 'global' as *;
+
+.p-message {
+    
+}
+
+.p-message__img {
+    display: block;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+}
+
+.p-message__inner {
+
+}
+
+.p-message__content {
+    position: relative;
+    z-index: 1;
+    margin-top: calc(-100vh + rem(200));
+    padding-bottom: rem(200);
+
+    @include mq(md) {
+        margin-top: calc(-100vh + rem(133));
+        padding-bottom: rem(50);
+    }
+}
+
+.p-message__title {
+    
+}
+
+.p-message__main {
+    position: sticky;
+    top: rem(100);
+}
+
+.p-message__subTitle {
+    max-width: rem(472);
+    margin-top: rem(60);
+    margin-inline: auto;
+
+    @include mq(md) {
+        max-width: rem(200);
+        margin-top: rem(60);
+    }
+}
+
+.p-message__text {
+    font-size: rem(18);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: calc(48/18);
+    margin-top: rem(50);
+    position: sticky;
+    overflow-y: scroll;
+    height: rem(360);
+    top: rem(150);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    @include mq(md) {
+        font-size: rem(15);
+        line-height: calc(36/15);
+    }
+}
+
+.p-message__text p + p {
+    margin-top: 1em;
+}
+
+.p-message__logo {
+    display: block;
+    max-width: rem(132);
+    margin-inline: auto;
+    margin-top: rem(110);
+}

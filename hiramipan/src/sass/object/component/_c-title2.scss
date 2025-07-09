@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.c-title2 {
+    text-align: center;
+}
+
+.c-title2__en {
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: calc(30/20);
+    letter-spacing: 0.1em;
+}
+
+.c-title2__ja {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(20/14);
+    letter-spacing: 0.1em;
+}

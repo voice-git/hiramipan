@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.p-history {
+    background: #E2DCD2 url(../images/top/bg_history.png) center center / cover no-repeat;
+    padding-top: rem(100);
+    padding-bottom: rem(90);
+
+    @include mq(md) {
+        padding-top: rem(85);
+        background: rgba($color: #E2DCD2, $alpha: 1.0);
+    }
+
+}
+
+.p-history__inner {
+
+}
+
+.p-history__title {
+
+}
+
+.p-history__text {
+    margin-top: rem(60);
+    font-size: rem(14);
+    line-height: calc(34/14);
+    letter-spacing: 0.1em;
+
+    @include mq(md) {
+        font-size: rem(12);
+        line-height: 2;
+        margin-top: rem(46);
+    }
+}
+
+.p-history__bnr {
+    margin-top: rem(120);
+
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
